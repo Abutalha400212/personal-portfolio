@@ -55,8 +55,8 @@ const FeedbackCard = ({
           <Link target="_blank" href={link}>
             <Image
               src={image}
-              width={20}
-              height={20}
+              width={50}
+              height={50}
               alt={""}
               className="rounded-full object-cover"
             />

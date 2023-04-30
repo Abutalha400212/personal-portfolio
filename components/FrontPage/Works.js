@@ -30,7 +30,7 @@ const ProjectCard = ({
           initial="hidden"
           animate="show"
           variants={zoomIn(0.8, 0.7)}
-          className="relative w-full min-h-[230px] bg-transparent flex items-center  rounded-2xl">
+          className="relative  min-h-[230px]   rounded-2xl">
           <Image
             src={image}
             width={400}
