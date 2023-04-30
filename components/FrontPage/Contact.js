@@ -1,9 +1,8 @@
-import React, { useRef, useState, Suspense } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { slideIn } from "@/utilis/motion";
 import { styles } from "../../styles/styles";
-
-import CanvasLoader, { EarthCanvas } from "../../utilis/Canvas";
+import { EarthCanvas } from "@/utilis/Canvas";
 
 const Contact = () => {
   return (

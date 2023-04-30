@@ -1,9 +1,10 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "@/utilis/motion";
+import { fadeIn, textVariant, zoomIn } from "@/utilis/motion";
 import { projects } from "../../utilis/tools";
 import { styles } from "../../styles/styles";
+import Image from "next/image";
 
 const ProjectCard = ({
   index,
@@ -25,25 +26,33 @@ const ProjectCard = ({
           speed: 450,
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-        <div className="relative w-full h-[230px]">
-          <img
+        <motion.div
+          initial="hidden"
+          animate="show"
+          variants={zoomIn(0.8, 0.7)}
+          className="relative w-full min-h-[230px] bg-transparent flex items-center  rounded-2xl">
+          <Image
             src={image}
+            width={400}
+            height={400}
             alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
+            className=" object-fill rounded-2xl"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 text-white">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="bg-black hover:bg-blue-900 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-              <img
+              className="rounded-full  cursor-pointer">
+              <Image
                 src={"/github.png"}
+                width={30}
+                height={30}
                 alt="source code"
-                className="w-[100px] h-[100px] object-contain"
+                className="bg-blue-900 rounded-full hover:bg-blue-800"
               />
             </div>
           </div>
-        </div>
+        </motion.div>
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>

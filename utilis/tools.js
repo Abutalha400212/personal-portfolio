@@ -175,7 +175,7 @@ const testimonials = [
     designation: "CEO",
     company: "Programming Hero",
     link: "https://www.linkedin.com/in/jhankar/",
-    image: "https://i.ibb.co/zJLCk9h/jhanker.jpg",
+    image: "/testimonial/jhanker.jpg",
   },
   {
     testimonial:
@@ -184,7 +184,7 @@ const testimonials = [
     designation: "CEO",
     company: "Call For Referral",
     link: "https://www.linkedin.com/in/arnab-sahoo-0b3427187/",
-    image: "https://i.ibb.co/M5FF6mg/arnab.jpg",
+    image: "/testimonial/arnab.jpg",
   },
   {
     testimonial:
@@ -193,7 +193,7 @@ const testimonials = [
     designation: "job Placement Executive",
     company: "Programming Hero",
     link: "https://www.linkedin.com/in/sheikh-mohammad-rifat/",
-    image: "https://i.ibb.co/ChD8TwJ/rifat.jpg",
+    image: "/testimonial/rifat.jpg",
   },
 ];
 
@@ -219,12 +219,8 @@ const projects = [
         name: "firebase",
         color: "pink-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "green-text-gradient",
-      },
     ],
-    image: "https://i.ibb.co/mFfRq6c/Capture-1.png",
+    image: "/works/car.png",
     source_code_link: "https://github.com/Abutalha400212/Car-Service",
   },
   {
@@ -249,7 +245,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: "https://i.ibb.co/1d44Td4/Capture-1.png",
+    image: "/works/doctor.png",
     source_code_link: "https://github.com/Abutalha400212/doctors-portal",
   },
   {
@@ -274,7 +270,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: "https://i.ibb.co/VMs3yPW/Capture-1.png",
+    image: "/works/mobile.png",
     source_code_link: "https://github.com/Abutalha400212/Resale-Market",
   },
   {
@@ -299,7 +295,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: "https://i.ibb.co/JQzYSrn/Capture-2.png",
+    image: "/works/tour.png",
     source_code_link: "https://github.com/Abutalha400212/domestic-portal",
   },
   {
@@ -324,13 +320,13 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: "https://i.ibb.co/9t316Cq/Capture.png",
+    image: "/works/job.png",
     source_code_link: "https://github.com/Abutalha400212/job-portal",
   },
   {
-    name: "Newcleus Media",
+    name: "Learning Technology",
     description:
-      "A socila platform for people tha is very Effective sharing expression and feedbacd. There are two type authentication system, use can sign in Or sign Up your account then he/she can be accessed",
+      "A learning platform for people about web security that is very Effective for learning and implementing. There are two type authentication system, use can sign in Or sign Up your account then he/she can be accessed",
     tags: [
       {
         name: "react",
@@ -344,8 +340,12 @@ const projects = [
         name: "node JS",
         color: "green-text-gradient",
       },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
     ],
-    image: "https://i.ibb.co/HzTbTN3/Capture1.png",
+    image: "/works/tech.png",
     source_code_link: "https://github.com/Abutalha400212/SocialMediaClient",
   },
 ];

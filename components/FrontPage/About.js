@@ -3,6 +3,7 @@ import { fadeIn, textVariant } from "@/utilis/motion";
 import { styles } from "../../styles/styles";
 import { services } from "../../utilis/tools";
 import Tilt from "react-parallax-tilt";
+import Image from "next/image";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
@@ -17,10 +18,12 @@ const ServiceCard = ({ index, title, icon }) => (
           speed: 450,
         }}
         className="bg-[#151030] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col ">
-        <img
+        <Image
+          width={100}
+          height={100}
           src={icon}
           alt="web-development"
-          className="w-28 h-28 object-contain"
+          className=" object-contain"
         />
 
         <h3 className="text-white text-[18px] font-black text-center">

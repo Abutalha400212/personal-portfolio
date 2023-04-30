@@ -4,6 +4,8 @@ import { styles } from "../../styles/styles";
 import { testimonials } from "../../utilis/tools";
 import { fadeIn, textVariant } from "@/utilis/motion";
 import Tilt from "react-parallax-tilt";
+import Image from "next/image";
+import Link from "next/link";
 // How to use React-tilt........
 
 // reverse: false, // reverse the tilt direction
@@ -50,13 +52,15 @@ const FeedbackCard = ({
               {designation} of {company}
             </p>
           </div>
-          <a target="_blank" href={link}>
-            <img
+          <Link target="_blank" href={link}>
+            <Image
               src={image}
-              alt={`feedback_by-${name}`}
-              className="w-10 h-10 rounded-full object-cover"
+              width={20}
+              height={20}
+              alt={""}
+              className="rounded-full object-cover"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </motion.div>{" "}

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/utilis/motion";
 import { navLinks } from "@/utilis/tools";
 import Navlink from "next/link";
+import Link from "next/link";
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -55,7 +56,7 @@ export default function Navbar() {
             animate="show"
             variants={fadeIn("", "spring", i * 0.3, 0.8)}
             className="text-[18px] font-bold child-hover:bg-clip-text child-hover:text-transparent child-hover:bg-gradient-to-r from-indigo-800  to-pink-600">
-            <a
+            <Link
               onClick={() => setActive(nav.title)}
               className={`${
                 active === nav.title
@@ -64,14 +65,14 @@ export default function Navbar() {
               } `}
               href={`#${nav.id}`}>
               {nav.title}
-            </a>
+            </Link>
           </motion.li>
         ))}
       </ul>
-      <a
+      <Link
         onClick={() => setScrolling(scroll ? true : false)}
         href={scrolling ? "#" : "#contact"}
-        className={`${scroll ? "scroll-up " : "scroll-down"}`}></a>
+        className={`${scroll ? "scroll-up" : "scroll-down"}`}></Link>
     </nav>
   );
 }
